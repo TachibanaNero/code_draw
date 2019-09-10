@@ -1,4 +1,3 @@
-htmlEditor.setValue('teste');
 
 var htmlMenu = [];
 htmlMenu[0] = "<div id='teste'>BOA TARDE FAMILIA</div> <input id='press1' type='button' onclick='sumir()' value='Sumir'> <input id='press2' type='button' onclick='ver()' value='Ver'>";
@@ -39,16 +38,6 @@ function editor() {
     );
     code.close();
   };
-
-/*
-  var meta = document.createElement('meta');
-  meta.httpEquiv = "Content-type";
-  meta.content = "text/html; charset=UTF-8";
-
-  var doc = document.getElementById('code').contentWindow.document.head;
-  debugger;
-  doc.append(meta);
-*/
 }
 
 editor();
