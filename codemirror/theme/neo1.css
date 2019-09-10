@@ -6,7 +6,6 @@
   background-color:#ffffff;
   color:#2e383c;
   line-height:1.4375;
-  border: 1px solid rgba(0,0,0,0.3);
 }
 .cm-s-neo .cm-comment { color:#75787b; }
 .cm-s-neo .cm-keyword, .cm-s-neo .cm-property { color:#1d75b3; }
@@ -24,17 +23,13 @@
 
 .cm-s-neo .CodeMirror-gutters {
   border:none;
-  padding-right: 10px;
-  margin-right: 10px;
-  border-right:1px solid rgba(0,0,0,0.1);
-  background-color: rgba(0,0,0,0.1);
+  border-right:10px solid transparent;
+  background-color:transparent;
 }
 
 .cm-s-neo .CodeMirror-linenumber {
   padding:0;
-  padding-left: 5px;
-  color:grey;
-  text-align: left;
+  color:#e0e2e5;
 }
 
 .cm-s-neo .CodeMirror-guttermarker { color: #1d75b3; }
