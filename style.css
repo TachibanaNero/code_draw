@@ -15,6 +15,13 @@ outline: none;
 border-radius: 4px;
 }
 
-.teste1{
+.editors{
 white-space: nowrap;
+}
+
+.botoes{
+width:100px;
+min-width: 30%;
+background-color: red;
+
 }

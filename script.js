@@ -25,6 +25,16 @@ function editor() {
     code.close();
   };
 
+  document.getElementById('press').onclick = function () {
+
+    code.open();
+    code.writeln(
+      htmlEditor.getValue(htmlEditor.setValue(htmlEditor.getValue() +
+        '<div>teste</div>'))
+    );
+    code.close();
+  };
+
   document.body.onkeyup = function () {
     code.open();
     code.writeln(
