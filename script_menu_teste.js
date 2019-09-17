@@ -1,4 +1,3 @@
-
 var htmlMenu = [];
 htmlMenu[0] = "<div id='teste'>BOA TARDE FAMILIA</div>\n<input id='press1' type='button' onclick='sumir()' value='Sumir'>\n<input id='press2' type='button' onclick='ver()' value='Ver'>";
 htmlMenu[1] = '\n#teste{background-color:lime;\ntext-align: center;\n} \n';
@@ -11,7 +10,7 @@ function editor() {
   var js = document.getElementById("js");
   var code = document.getElementById("code").contentWindow.document;
 
-  document.body.onload = function () {
+  document.body.onload = function() {
     code.open();
     code.writeln(
       "<style>" +
@@ -43,7 +42,7 @@ function editor() {
     code.close();
   };
 
-  document.body.onkeyup = function () {
+  document.body.onkeyup = function() {
     code.open();
     code.writeln(
       "<style>" +
@@ -59,11 +58,11 @@ function editor() {
 }
 
 function myFunction1() {
-  if(demo.style.color == 'blue')
+  if (demo.style.color == 'blue')
     document.getElementById("demo").style.color = "red";
-    else{
-      document.getElementById("demo").style.color = "blue"
-    }
+  else {
+    document.getElementById("demo").style.color = "blue"
+  }
 }
 
 editor();
