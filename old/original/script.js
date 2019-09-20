@@ -17,7 +17,7 @@ function editor() {
       "</style>" +
       "<script>" +
       js.value +
-      "</script>" + html.value
+      "</script>" + 'teste'
     );
     code.close();
   };
