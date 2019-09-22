@@ -34,6 +34,17 @@ float: left;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.teste1512 {
+  display: inline-block;
+  width: 25%;
+  background-color: cyan;
+  bottom: 150px;
+  float: left;
+}
+
+>>>>>>> parent of b2d5aa0... v7
 .menu {
 =======
 .teste1512{
