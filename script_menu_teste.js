@@ -1,3 +1,4 @@
+
 var htmlMenu = [];
 htmlMenu[0] = "<p id='teste'>BOA TARDE FAMILIA</p>\n<input id='press1' type='button' onclick='sumir()' value='Sumir'>\n<input id='press2' type='button' onclick='ver()' value='Ver'>";
 htmlMenu[1] = '\n#teste{background-color:lime;\ntext-align: center;\n} \n';
@@ -19,7 +20,12 @@ function editor() {
   var js = document.getElementById("js");
   var code = document.getElementById("code").contentWindow.document;
 
+<<<<<<< HEAD
   function conteudo(){
+=======
+  document.body.onload = function () {
+    code.open();
+>>>>>>> parent of e8c6eeb... v6
     code.writeln(
       "<style>" +
       cssEditor.getValue() +
@@ -57,8 +63,12 @@ function editor() {
     code.close();
   };
 
+<<<<<<< HEAD
   document.getElementById('demo2').onclick = function myFunction () {
 
+=======
+  document.body.onkeyup = function () {
+>>>>>>> parent of e8c6eeb... v6
     code.open();
     code.writeln(
       "<style>" +
@@ -89,11 +99,11 @@ function editor() {
 }
 
 function myFunction1() {
-  if (demo.style.color == 'blue')
+  if(demo.style.color == 'blue')
     document.getElementById("demo").style.color = "red";
-  else {
-    document.getElementById("demo").style.color = "blue"
-  }
+    else{
+      document.getElementById("demo").style.color = "blue"
+    }
 }
 
 editor();

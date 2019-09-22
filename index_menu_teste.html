@@ -6,19 +6,19 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Editor de Código</title>
 
-	<link href="style_menu_teste.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="menu/menu_css.css">
+  <link href="style_menu_teste.css" rel="stylesheet" type="text/css" />
 
 	<script src="codemirror/lib/codemirror.js"></script>
 	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
 	<link rel="stylesheet" href="codemirror/theme/neo.css">
 	<script src="codemirror/mode/xml/xml.js"></script>
-	<script src="codemirror/mode/css/css.js"></script>
-	<script src="codemirror/mode/javascript/javascript.js"></script>
+  <script src="codemirror/mode/css/css.js"></script>
+  <script src="codemirror/mode/javascript/javascript.js"></script>
 
 </head>
 
 <body>
+<<<<<<< HEAD
 	<section>
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -55,28 +55,34 @@
 
 		<!-- Use any element to open the sidenav -->
 		<h1 class='openbtn' onclick="openNav()">Open</h1>
+=======
+<section class="menu">
+<h3>Elementos em bloco</h3>
+<ul>
+<li>Heading</li>
+<ul id='demo' onclick="myFunction()" style="color:blue" >h1</ul>
+<ul>h2</ul>
+<ul>h3</ul>
+<ul>h4</ul>
+<ul>h5</ul>
+<ul>h6</ul>
+</ul>
+<!-- <input id="press" type="button" value="Inserir"> -->
+>>>>>>> parent of e8c6eeb... v6
 	</section>
+	<section class="editor_and_iframe">
+<section class='editors'>
+     <textarea id="html" placeholder="HTML">
+     </textarea>
 
-	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-	<div id="main">
+      <textarea id="css" placeholder="CSS">
+      </textarea>
 
-		<section class="editor_and_iframe">
-			<section class='editors'>
-				<textarea id="html" placeholder="HTML">
-	     </textarea>
+      <textarea id="js" placeholder="JavaScript">
+      </textarea>
+</section>
 
-				<textarea id="css" placeholder="CSS">
-	      </textarea>
-
-				<textarea id="js" placeholder="JavaScript">
-	      </textarea>
-			</section>
-
-			<iframe id="code"></iframe>
-		</section>
-
-	</div>
-
+<<<<<<< HEAD
 	<script type="text/javascript">
 		var htmlEditor = CodeMirror.fromTextArea(html, {
 			mode: "text/xml",
@@ -102,5 +108,32 @@
 	<!-- <script type="text/javascript" src="canvas\Draggin.js\draggin.min.js"></script> -->
 	<script src="menu/menu_js.js"></script>
 </body>
+=======
+      <iframe id="code"></iframe>
+</section>
+>>>>>>> parent of e8c6eeb... v6
 
+<script type="text/javascript">
+  var htmlEditor = CodeMirror.fromTextArea(html,{
+  mode: "text/xml",
+  theme: "neo",
+  lineNumbers: true,
+  lineWrapping: true,
+  tabSize: null,
+  });
+  var cssEditor = CodeMirror.fromTextArea(css,{
+  mode: "css",
+  theme: "neo",
+  lineNumbers: true,
+  lineWrapping: true,
+  });
+  var jsEditor = CodeMirror.fromTextArea(js,{
+  mode: "javascript",
+  theme: "neo",
+  lineNumbers: true,
+  lineWrapping: true,
+  });
+</script>
+    <script type="text/javascript" src="script_menu_teste.js"></script>
+  </body>
 </html>
