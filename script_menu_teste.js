@@ -4,7 +4,8 @@ htmlMenu[1] = '\n#teste{background-color:lime;\ntext-align: center;\n} \n';
 htmlMenu[2] = "function sumir(){ document.getElementById('teste').style.visibility='hidden'};\nfunction ver(){ document.getElementById('teste').style.visibility='visible'};";
 htmlMenu[3] = '<div class="mover"></div>'
 htmlMenu[4] = '.mover {\nwidth: 50px;\nheight: 50px;\nbackground: red;\nposition: absolute;\nleft: var(--mouse-x);\ntop: var(--mouse-y);\n}'
-// htmlMenu[5] = 'let root = document.documentElement;\nroot.addEventListener("mousemove", e => {\nroot.style.setProperty('--mouse-x', e.clientX + "px");\nroot.style.setProperty('--mouse-y', e.clientY + "px");\n});'
+htmlMenu[5] = 'let root = document.documentElement;\nroot.addEventListener("mousemove", e => {\nroot.style.setProperty(--mouse-x, e.clientX + "px");\nroot.style.setProperty(--mouse-y, e.clientY + "px");\n})';
+
 var h1 = document.getElementsByTagName("p");
 var i;
 
@@ -32,15 +33,7 @@ function editor() {
 
   document.body.onload = function() {
     code.open();
-    code.writeln(
-      "<style>" +
-      cssEditor.getValue() +
-      "</style>" +
-      htmlEditor.getValue() +
-      "<script>" +
-      jsEditor.getValue() +
-      "</script>"
-    );
+    conteudo()
     code.close();
   };
 
@@ -57,7 +50,10 @@ function editor() {
         htmlMenu[2])) +
       "</script>" +
       htmlEditor.getValue(htmlEditor.setValue(htmlEditor.getValue() +
-        htmlMenu[0])));
+        htmlMenu[0])) +
+    '<script type="text/javascript" src="canvas/Draggin.js/draggin.min.js">' + '</script>' +
+    '<script>' + 'var h1 = document.querySelectorAll("p,input"); var i; for (i = 0; i < h1.length; i++) {h1[i].classList.add("draggable");}' + '</script>'
+    );
     code.close();
   };
 
@@ -74,7 +70,10 @@ function editor() {
         htmlMenu[5])) +
       "</script>" +
       htmlEditor.getValue(htmlEditor.setValue(htmlEditor.getValue() +
-        htmlMenu[3])));
+        htmlMenu[3])) +
+    '<script type="text/javascript" src="canvas/Draggin.js/draggin.min.js">' + '</script>' +
+    '<script>' + 'var h1 = document.querySelectorAll("p,input"); var i; for (i = 0; i < h1.length; i++) {h1[i].classList.add("draggable");}' + '</script>'
+    );
     code.close();
   };
 
